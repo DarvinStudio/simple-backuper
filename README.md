@@ -23,7 +23,7 @@ Creating the bucket, type any bucket name instead of {mybucketname}
 
 Check that everythins is correct and the bucket is created
 
-    s3cmd la
+    s3cmd ls
     
 Now you can just run the script with parameters 
 1) Path where copies will be stored on local file syste
