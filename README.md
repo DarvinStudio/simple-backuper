@@ -41,4 +41,6 @@ If everything is correct next step will be to setup cron, for example once per d
     00 1 * * * /bin/bash /pathtoscript/backup.sh /var/backups/mysitename/ /var/www/mysitename.ru/ mydbname mynewbuckentname
     
 ## IMPORTANT NOTICE
-The script checks nothing when does a job, please make sure provided paths are correct and a bucket is successfully created. 
+1) The script checks nothing when does a job, please make sure provided paths are correct and a bucket is successfully created. 
+2) The script connect to database using root login without password. If you have a password, modifi the script as you need
+3) The script exclude .git folder from files, you can modify this directly
